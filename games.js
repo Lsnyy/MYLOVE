@@ -16,5 +16,11 @@ const games = [
         url: "https://pan.quark.cn/s/b18ab9f6695c",
         category: "肉鸽",
         image: "images/小骨英雄杀手.jpg" // ✅ 路径与文件名一致
+    }，
+    {
+        title: "夏日狂想曲+",
+        url: "https://pan.quark.cn/s/ed33b5699b84",
+        category: "像素",
+        image: "images/夏日.jpg"
     }
 ]; // ✅ 无多余逗号
