@@ -13,10 +13,10 @@ const games = [
         image: "images/异星工厂.jpg" 
     }，
     {
-       title: "小骨：英雄杀手",
-       url: "https://pan.quark.cn/s/b18ab9f6695c",
-       category: "肉鸽",
-       image: "images/小骨：英雄杀手.jpg"
+        title: "小骨：英雄杀手",
+        url: "https://pan.quark.cn/s/b18ab9f6695c",
+        category: "肉鸽",
+        image: "images/小骨：英雄杀手.jpg"
     }
      // 可以继续添加其他游戏，用逗号分隔
 ];
