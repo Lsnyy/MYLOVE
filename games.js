@@ -7,7 +7,7 @@ const games = [
     },
     {
         title: "异星工厂",
-        url: "https://pan.quark.cn/s/87d74de25f4o",
+        url: "https://pan.quark.cn/s/ba6797bbc52c",
         category: "建设",
         image: "images/异星工厂.jpg"
     },
