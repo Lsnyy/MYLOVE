@@ -19,7 +19,7 @@ const games = [
     },
     {   // ✅ 新增游戏对象后保留逗号
         title: "夏日狂想曲+",
-        url: "https://pan.quark.cn/s/ed33b569b84",
+        url: "https://pan.quark.cn/s/171a339fef70",
         category: "像素",
         image: "images/夏日.jpg"
     }   // ✅ 最后一个对象无逗号
