@@ -1,0 +1,237 @@
+/* 基础重置与字体 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background: #0f172a; /* 深蓝背景 */
+    color: #e2e8f0;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* 标题设计 */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(45deg, #818cf8, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 3px;
+    background: #3b82f6;
+    margin: 0.5rem auto;
+    border-radius: 2px;
+}
+
+/* 搜索与筛选区域 */
+.filter-section {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 0.8rem 1.5rem;
+    width: min(90%, 500px);
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+/* 分类按钮组 */
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+.filter-buttons button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 25px;
+    background: rgba(59, 130, 246, 0.15);
+    color: #93c5fd;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+    background: #3b82f6;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+/* 游戏卡片网格布局 */
+.game-grid {
+    display: grid;
+    /* 默认一行5列，最小宽度240px（根据容器自动调整） */
+    grid-template-columns: repeat(5, minmax(240px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* 响应式适配 */
+@media (max-width: 1440px) {
+    /* 大屏（如笔记本）保持5列 */
+    .game-grid {
+        grid-template-columns: repeat(5, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 1200px) {
+    /* 中等屏幕调整为4列 */
+    .game-grid {
+        grid-template-columns: repeat(4, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    /* 平板调整为3列 */
+    .game-grid {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    /* 小屏幕调整为2列 */
+    .game-grid {
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    /* 手机端单列显示 */
+    .game-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 游戏卡片设计 */
+.game-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 1.2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(59, 130, 246, 0.2);
+}
+
+.game-card:hover::before {
+    left: 100%;
+}
+
+.game-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #e2e8f0;
+}
+
+.game-card .category {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: rgba(59, 130, 246, 0.2);
+    color: #93c5fd;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* 无结果提示 */
+.no-results {
+    text-align: center;
+    padding: 2rem;
+    color: #64748b;
+    font-size: 1.1rem;
+    grid-column: 1 / -1;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .game-card {
+        padding: 1rem;
+    }
+}
+// 卡片悬停时添加流光动画
+document.querySelectorAll('.game-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-5px) scale(1.02)';
+    });
+    
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0) scale(1)';
+    });
+});

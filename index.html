@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金钱的游戏库 🕹️</title>
+    <link rel="stylesheet" href="style.css"> <!-- 链接样式表 -->
+</head>
+<body>
+    <div class="container">
+        <h1>金钱的游戏库 🎮</h1>
+        
+        <!-- 搜索框+分类筛选按钮 -->
+		<div class="filter-section">
+        <input type="text" id="searchInput" placeholder="搜索游戏..." class="search-bar">
+        <div class="filter-buttons">
+            <button class="active" data-filter="all">全部</button>
+            <button data-filter="建设">建设</button>
+            <button data-filter="策略">策略</button>
+        </div>
+
+        <!-- 游戏链接显示在这里 -->
+        <div class="game-grid" id="gameList"></div>
+    </div>
+
+    <!-- 加载JavaScript文件 -->
+    <script src="games.js"></script> <!-- 先加载游戏数据 -->
+    <script src="app.js"></script>   <!-- 再加载逻辑代码 -->
+</body>
+</html>
