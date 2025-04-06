@@ -16,6 +16,6 @@ const games = [
         title: "小骨：英雄杀手",
         url: "https://pan.quark.cn/s/b18ab9f6695c",
         category: "肉鸽",
-        image: "images/小骨英雄杀手.jpg"  // 已重命名文件（去掉冒号）
+        image: "images/小骨英雄杀手.jpg"
     } 
 ];
