@@ -25,12 +25,12 @@ function loadGames(gamesToLoad) {
     gameList.innerHTML = "";
     gamesToLoad.forEach(game => {
         gameList.innerHTML += `
-            <a href="${game.url}" class="game-card" target="_blank">
-                <img src="${game.image}" alt="${game.title}">
-                <h3>${game.title}</h3>
-                <span class="category">${game.category}</span>
-            </a >
-        `;
+    <a href="${game.url}" class="game-card" target="_blank" rel="noreferrer">
+        < img src="${game.image}" alt="${game.title}">
+        <h3>${game.title}</h3>
+        <span class="category">${game.category}</span>
+    </a >
+`;
     });
 }
 
