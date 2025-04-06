@@ -2,7 +2,7 @@
 const games = [
     {
        title: "所有游戏均来源于网上分享，完全免费",
-       url: "",
+       url: "666",
        category: "免费",
        image: "images/免费.jpg"
     },
