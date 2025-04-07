@@ -28,7 +28,7 @@ const games = [
         url: "https://pan.quark.cn/s/11964568e719",
         category: "动作",
         image: "images/奥日.jpg"
-    }，
+    },
     {   // ✅ 新增游戏对象后保留逗号
         title: "沙威玛",
         url: "https://pan.quark.cn/s/80fc099652bd",
