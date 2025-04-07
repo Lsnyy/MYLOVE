@@ -101,10 +101,9 @@ h1::after {
 /* 游戏卡片网格布局 */
 .game-grid {
     display: grid;
-    /* 默认一行5列，最小宽度240px（根据容器自动调整） */
-    grid-template-columns: repeat(5, minmax(240px, 1fr));
-    gap: 1.5rem;
-    padding: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
 /* 响应式适配 */
