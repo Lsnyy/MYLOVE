@@ -136,10 +136,23 @@ h1::after {
     }
 }
 
-@media (max-width: 480px) {
-    /* 手机端单列显示 */
+@media (max-width: 768px) {
     .game-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr); /* 一行两列 */
+        gap: 10px; /* 缩小间距 */
+        padding: 10px;
+    }
+
+    .game-card {
+        padding: 10px; /* 缩小内边距 */
+    }
+
+    .game-card img {
+        height: 150px; /* 调整图片高度 */
+    }
+
+    .game-card h3 {
+        font-size: 14px; /* 缩小标题字号 */
     }
 }
 
