@@ -18,8 +18,8 @@ const games = [
         image: "images/小骨英雄杀手.jpg" // 确保文件名无冒号
     },
     {
-        title: "夏日狂想曲+",
-        url: "https://pan.quark.cn/s/171a339fef70",
+        title: "夏日狂想曲",
+        url: "https://pan.quark.cn/s/eba1a7e159fb",
         category: "像素",
         image: "images/夏日.jpg"
     },
