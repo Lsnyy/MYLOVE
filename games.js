@@ -20,7 +20,7 @@ const games = [
     {
         title: "夏日狂想曲",
         url: "https://pan.quark.cn/s/eba1a7e159fb",
-        category: "像素",
+        category: "模拟",
         image: "images/夏日.jpg"
     },
     {
@@ -34,5 +34,11 @@ const games = [
         url: "https://pan.quark.cn/s/80fc099652bd",
         category: "模拟",
         image: "images/沙威玛.jpg"
+    },
+    {
+        title: "冬日狂想曲",
+        url: "https://pan.quark.cn/s/f2afd2450c0f",
+        category: "模拟",
+        image: "images/冬日.jpg"
     }
 ]; // ✅ 正确闭合数组
