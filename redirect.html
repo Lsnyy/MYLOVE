@@ -1,0 +1,19 @@
+<!-- redirect.html -->
+   <!DOCTYPE html>
+   <html>
+   <head>
+       <script>
+           // 从 URL 参数中提取目标链接并跳转
+           const urlParams = new URLSearchParams(window.location.search);
+           const targetUrl = urlParams.get('url');
+           if (targetUrl) {
+               window.location.href = decodeURIComponent(targetUrl);
+           } else {
+               document.write('无效链接');
+           }
+       </script>
+   </head>
+   <body>
+       <!-- 留空 -->
+   </body>
+   </html>
