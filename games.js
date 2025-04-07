@@ -46,5 +46,11 @@ const games = [
         url: "https://pan.quark.cn/s/cb210eedd845",
         category: "模拟",
         image: "images/夏日四叶草.jpg"
+    },
+    {
+        title: "CE",
+        url: "https://pan.quark.cn/s/cb210eedd845",
+        category: "工具",
+        image: "images/CE.jpg"
     }
 ]; // ✅ 正确闭合数组
