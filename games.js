@@ -1,6 +1,6 @@
 const games = [
     {
-        title: "所有游戏均来源于网上分享，完全免费",
+        title: "所有资源均来源于网上大佬分享，完全免费",
         url: "#",
         category: "免费",
         image: "images/免费.jpg"
