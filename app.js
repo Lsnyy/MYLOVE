@@ -25,8 +25,8 @@ function loadGames(gamesToLoad) {
     gameList.innerHTML = "";
     gamesToLoad.forEach(game => {
          gameList.innerHTML += `
-       <a href=" " class="game-card" target="_blank">
-           < img src="${game.image}" alt="${game.title}">
+       <a href="${game.url}" class="game-card" target="_blank">
+           <img src="${game.image}" alt="${game.title}">
            <h3>${game.title}</h3>
        </a >
    `;
