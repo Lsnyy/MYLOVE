@@ -1,7 +1,7 @@
 const games = [
     {
         title: "所有游戏均来源于网上分享，完全免费",
-        url: "#", // 占位符
+        url: "#",
         category: "免费",
         image: "images/免费.jpg"
     },
@@ -15,24 +15,24 @@ const games = [
         title: "小骨：英雄杀手",
         url: "https://pan.quark.cn/s/b18ab9f6695c",
         category: "肉鸽",
-        image: "images/小骨英雄杀手.jpg"
+        image: "images/小骨英雄杀手.jpg" // 确保文件名无冒号
     },
-    {   // ✅ 新增游戏对象后保留逗号
+    {
         title: "夏日狂想曲+",
-        url: "https://pan.quark.cn/s/171a339fef70",
+        url: "https://pan.quark.cn/s/171a339fe70",
         category: "像素",
         image: "images/夏日.jpg"
     },
-    {   // ✅ 新增游戏对象后保留逗号
+    {
         title: "奥日",
         url: "https://pan.quark.cn/s/11964568e719",
         category: "动作",
-        image: "images/奥日.jpg"
+        image: "images/奥日.jpg" // 检查扩展名大小写
     },
-    {   // ✅ 新增游戏对象后保留逗号
+    {
         title: "沙威玛",
         url: "https://pan.quark.cn/s/80fc099652bd",
         category: "模拟",
         image: "images/沙威玛.jpg"
     }
-];      // ✅ 正确闭合数组
+]; // ✅ 正确闭合数组
