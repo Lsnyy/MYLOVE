@@ -58,5 +58,11 @@ const games = [
         url: "https://pan.quark.cn/s/366d77556fbf",
         category: "模拟",
         image: "images/大侠立志传.jpg"
+    },
+    {
+        title: "LX Music",
+        url: "https://pan.quark.cn/s/430fc65428a9",
+        category: "工具",
+        image: "images/LX.jpg"
     }
 ]; // ✅ 正确闭合数组
