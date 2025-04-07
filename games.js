@@ -19,7 +19,7 @@ const games = [
     },
     {
         title: "夏日狂想曲+",
-        url: "https://pan.quark.cn/s/171a339fe70",
+        url: "https://pan.quark.cn/s/171a339fef70",
         category: "像素",
         image: "images/夏日.jpg"
     },
