@@ -52,5 +52,11 @@ const games = [
         url: "https://pan.quark.cn/s/5b64efb048b3",
         category: "工具",
         image: "images/CE.jpg"
+    },
+    {
+        title: "大侠立志传",
+        url: "https://pan.quark.cn/s/366d77556fbf",
+        category: "模拟",
+        image: "images/大侠立志传.jpg"
     }
 ]; // ✅ 正确闭合数组
