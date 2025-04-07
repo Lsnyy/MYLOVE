@@ -49,7 +49,7 @@ const games = [
     },
     {
         title: "CE",
-        url: "https://pan.quark.cn/s/cb210eedd845",
+        url: "https://pan.quark.cn/s/5b64efb048b3",
         category: "工具",
         image: "images/CE.jpg"
     }
