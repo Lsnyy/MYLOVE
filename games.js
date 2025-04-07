@@ -22,5 +22,11 @@ const games = [
         url: "https://pan.quark.cn/s/171a339fef70",
         category: "像素",
         image: "images/夏日.jpg"
-    }   // ✅ 最后一个对象无逗号
+    },
+    {   // ✅ 新增游戏对象后保留逗号
+        title: "奥日",
+        url: "https://pan.quark.cn/s/11964568e719",
+        category: "动作",
+        image: "images/奥日.jpg"
+    }
 ];      // ✅ 正确闭合数组
