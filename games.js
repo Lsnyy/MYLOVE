@@ -40,5 +40,11 @@ const games = [
         url: "https://pan.quark.cn/s/f2afd2450c0f",
         category: "模拟",
         image: "images/冬日.jpg"
+    },
+    {
+        title: "夏日四叶草",
+        url: "https://pan.quark.cn/s/cb210eedd845",
+        category: "模拟",
+        image: "images/夏日四叶草.jpg"
     }
 ]; // ✅ 正确闭合数组
