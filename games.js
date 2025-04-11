@@ -76,5 +76,11 @@ const games = [
         url: "https://pan.quark.cn/s/60c7868f631d",
         category: "卡牌",
         image: "小丑牌.jpg"
+    },
+    {
+        title: "饥荒",
+        url: "https://pan.quark.cn/s/05b6ebe12941",
+        category: "模拟",
+        image: "饥荒.jpg"
     }
 ]; // ✅ 正确闭合数组
