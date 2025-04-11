@@ -64,5 +64,11 @@ const games = [
         url: "https://pan.quark.cn/s/430fc65428a9",
         category: "工具",
         image: "images/LX.jpg"
+    },
+    {
+        title: "苏丹的游戏",
+        url: "https://pan.quark.cn/s/1d1e9d11c6d1",
+        category: "卡牌",
+        image: "苏丹的游戏.jpg"
     }
 ]; // ✅ 正确闭合数组
