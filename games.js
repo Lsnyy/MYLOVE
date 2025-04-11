@@ -70,5 +70,11 @@ const games = [
         url: "https://pan.quark.cn/s/1d1e9d11c6d1",
         category: "卡牌",
         image: "苏丹的游戏.jpg"
+    },
+    {
+        title: "小丑牌",
+        url: "https://pan.quark.cn/s/60c7868f631d",
+        category: "卡牌",
+        image: "小丑牌.jpg"
     }
 ]; // ✅ 正确闭合数组
