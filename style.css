@@ -6,18 +6,11 @@
     font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
-:root {
-    --primary: #2A2A2A;         /* 深灰主色 */
-    --secondary: #4A90E2;       /* 清新蓝 */
-    --light: #F8F9FA;           /* 浅灰背景 */
-    --text: #333333;            /* 主文字色 */
-}
-
 body {
-    background: var(--light);   /* 浅灰背景 */
-    color: var(--text);
-    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #0f172a; /* 深蓝背景 */
+    color: #e2e8f0;
     line-height: 1.6;
+    min-height: 100vh;
 }
 
 .container {
@@ -29,21 +22,25 @@ body {
 /* 标题设计 */
 h1 {
     text-align: center;
-    font-size: 2.2rem;
-    margin: 2rem 0;
-    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(45deg, #818cf8, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     position: relative;
     display: inline-block;
-    padding: 0 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 h1::after {
     content: '';
     display: block;
-    width: 50px;
+    width: 60%;
     height: 3px;
-    background: var(--secondary);
-    margin: 8px auto 0;
+    background: #3b82f6;
+    margin: 0.5rem auto;
+    border-radius: 2px;
 }
 
 /* 搜索与筛选区域 */
@@ -77,29 +74,28 @@ h1::after {
 /* 分类按钮组 */
 .filter-buttons {
     display: flex;
-    gap: 8px;
     flex-wrap: wrap;
+    gap: 0.8rem;
     justify-content: center;
-    margin-bottom: 2rem;
 }
 
-.filter-btn {
-    padding: 8px 16px;
+.filter-buttons button {
+    padding: 0.6rem 1.2rem;
     border: none;
-    border-radius: 20px;
-    background: rgba(0, 0, 0, 0.05);
-    color: var(--text);
+    border-radius: 25px;
+    background: rgba(59, 130, 246, 0.15);
+    color: #93c5fd;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.3s;
+    font-weight: 500;
 }
 
-.filter-btn.active {
-    background: var(--secondary);
+.filter-buttons button.active,
+.filter-buttons button:hover {
+    background: #3b82f6;
     color: white;
-}
-
-.filter-btn:hover {
-    background: rgba(74, 144, 226, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 /* 游戏卡片网格布局 */
@@ -140,35 +136,23 @@ h1::after {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+    /* 手机端单列显示 */
     .game-grid {
-        grid-template-columns: repeat(2, 1fr); /* 一行两列 */
-        gap: 10px;
-        padding: 10px;
-    }
-    
-    .game-card {
-        padding: 12px;
-    }
-    
-    .game-card img {
-        height: 140px;
-    }
-    
-    h1 {
-        font-size: 1.8rem;
+        grid-template-columns: 1fr;
     }
 }
 
 /* 游戏卡片设计 */
 .game-card {
-    background: white;
-    border-radius: 12px;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* 柔和阴影 */
-    transition: transform 0.2s, box-shadow 0.2s;
-    text-decoration: none;
-    color: inherit;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 1.2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .game-card::before {
@@ -188,8 +172,9 @@ h1::after {
 }
 
 .game-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(59, 130, 246, 0.2);
 }
 
 .game-card:hover::before {
@@ -199,10 +184,10 @@ h1::after {
 .game-card img {
     width: 100%;
     height: 180px;
-    border-radius: 8px;
     object-fit: cover;
-    margin-bottom: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .game-card h3 {
@@ -212,13 +197,14 @@ h1::after {
 }
 
 
-.category {
+.game-card .category {
     display: inline-block;
-    padding: 4px 12px;
-    background: rgba(74, 144, 226, 0.1);
-    color: var(--secondary);
+    padding: 0.3rem 0.8rem;
+    background: rgba(59, 130, 246, 0.2);
+    color: #93c5fd;
     border-radius: 20px;
-    font-size: 0.9em;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 /* 无结果提示 */
