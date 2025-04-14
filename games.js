@@ -42,10 +42,10 @@ const games = [
         image: "images/冬日.jpg"
     },
     {
-        title: "夏日四叶草",
+        title: "夏色四叶草",
         url: "https://pan.quark.cn/s/cb210eedd845",
         category: "模拟",
-        image: "images/夏日四叶草.jpg"
+        image: "images/夏色四叶草.jpg"
     },
     {
         title: "CE",
